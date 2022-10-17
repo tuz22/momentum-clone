@@ -6,13 +6,22 @@ function loginSubmit(e) {
   const userName = loginInput.value;
 
   e.preventDefault();
-  console.log(userName);
-
   loginForm.classList.add('hidden');
   localStorage.setItem('userName', userName);
 
+  hello(userName);
+}
+
+function hello(userName){
   mainPage.innerHTML = `Hello ${userName}`;
   mainPage.classList.remove('hidden');
 }
 
-loginForm.addEventListener('submit', loginSubmit);
+  const savedUserName = localStorage.getItem('userName');
+
+  if (savedUserName == null) {
+    loginForm.classList.remove('hidden');
+    loginForm.addEventListener('submit', loginSubmit);
+  } else {
+      hello(savedUserName);
+  }
