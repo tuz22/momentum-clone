@@ -31,18 +31,21 @@ function writeToDo(item){
 
 function handleToDoSubmit(e){
   e.preventDefault();
+  
   const newTodo = toDoInput.value;
   toDoInput.value = "";
   const newTodoObj = {
     text: newTodo,
     id: Date.now(),
   };
+
   toDos.push(newTodoObj);
   writeToDo(newTodoObj);
   savedToDo();
 }
 toDoForm.addEventListener('submit', handleToDoSubmit);
 
+/* 새로고침 시 투두리스트 불러오기 */
 const getTodos = localStorage.getItem('todos');
 if (getTodos){
   const parsedTodos = JSON.parse(getTodos);
