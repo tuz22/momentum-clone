@@ -1,5 +1,13 @@
 const background = document.querySelector('.background');
-const images = ['0.jpg', '1.jpg', '2.jpg'];
+const imageCount = 14;
+let images = [];
+
+for(let i = 0; i < imageCount; i++) {
+  let img;
+  img = `${i}.jpg`
+  images.push(img);
+}
+
 const selectImage = images[Math.floor(Math.random() * images.length)];
 const backgroundImage = document.createElement('img');
 
