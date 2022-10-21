@@ -1,5 +1,5 @@
 const background = document.querySelector('.background');
-const imageCount = 14;
+const imageCount = 12;
 let images = [];
 
 for(let i = 0; i < imageCount; i++) {
