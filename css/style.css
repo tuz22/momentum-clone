@@ -1,3 +1,151 @@
 .hidden {
-  display: none;
+  display: none !important;
+}
+
+html {
+  font-size: 12px;
+  color: white;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.background img {
+  position: relative;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+}
+.main {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin: 0;
+  transform: translate(-50%, -40%);
+  text-align: center;
+  z-index: 3;
+}
+.main #clock {
+  font-size: 25rem;
+  margin: 0.3em;
+}
+.main #hello {
+  font-size: 8rem;
+  margin: -1em;
+}
+#loginForm {
+  position: absolute;
+  display: flex;
+  top: 55%;
+  left: 50%;
+  margin: 0;
+  transform: translate(-50%, -55%);
+  text-align: center;
+  z-index: 3;
+}
+#loginForm input {
+  /* border-style: none; */
+  background: none;
+  color: white;
+  text-align: center;
+  z-index: 3;
+}
+input.id {
+  width: 12em;
+  border: none;
+  margin: 0 0.5em;
+  border-bottom: 3px solid white;
+  font-size: 6rem;
+}
+input.log-in {
+  border: 1px solid white;
+  font-size: 5rem;
+  padding: 2rem;
+  cursor: pointer;
+}
+input.log-in:hover {
+  background: white;
+}
+
+#todoForm {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -65%);
+  text-align: center;
+  z-index: 3;
+}
+#todoForm input {
+  font-size: 5rem;
+  width: 24em;
+  border-style: none;
+  border-bottom: 3px solid white;
+  background: none;
+  color: white;
+  text-align: center;
+  z-index: 3;
+}
+input::placeholder {
+  color: white;
+}
+#weather {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  transform: translate(-3%,-3%);
+  font-size: 5rem;
+  z-index: 3;
+}
+.todoList-box {
+  position: absolute;
+  width: 100rem;
+  height: 50rem;
+  margin: 1rem;
+  top: 90%;
+  left: 50%;
+  overflow-y: auto;
+  transform: translate(-50%, -90%);
+}
+#todoList {
+  font-size: 5rem;
+  z-index: 3;
+}
+#todoList li {
+  margin: 2rem;
+  position: relative;
+}
+#todoList button {
+  font-size: 4rem;
+  margin: 0 2rem;
+  border: 1px solid white;
+  border-radius: 20%;
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+.todoList-box::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.todoList-box::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.3);
+}
+.todoList-box::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: white;
+}
+.todoList-box::-webkit-scrollbar-button {
+  background: none;
+}
+#lettering {
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translate(-50%,-3%);
+  font-size: 4rem;
+  font-style: italic;
+  z-index: 3;
 }

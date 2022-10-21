@@ -9,15 +9,20 @@
 </head>
 <body>
   <form id="loginForm" class="hidden">
-    <input type="text" required maxlength="16" placeholder="What is your name?">
-    <input type="submit" value="Log In">
+    <input class="id" type="text" required maxlength="16" placeholder="What is your name?">
+    <input class="log-in" type="submit" value="Log In">
   </form>
-  <h2 id="clock"></h2>
-  <h1 id="main" class="hidden"></h1>
-  <form id="todoForm">
+  <div class="main">
+    <h2 id="clock"></h2>
+    <h1 id="hello" class="hidden"></h1>
+  </div>
+  <form id="todoForm" class="hidden">
     <input type="text" placeholder="Write a To Do and Press Enter" required>
   </form>
-  <ul id="todoList"></ul>
+  <div class="background"></div>
+  <div class="todoList-box">
+    <ul id="todoList"></ul>
+  </div>
   <div id="lettering">
     <span></span>
   </div>

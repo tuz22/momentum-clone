@@ -24,7 +24,7 @@ function writeToDo(item){
   span.innerHTML = item.text;
   
   li.appendChild(button);
-  button.innerHTML = 'X';
+  button.innerHTML = '✖';
   button.addEventListener('click', deleteToDo);
   toDoList.appendChild(li);
 }
