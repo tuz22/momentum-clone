@@ -44,14 +44,14 @@ body {
   margin: 0;
   transform: translate(-50%, -55%);
   text-align: center;
-  z-index: 3;
+  z-index: 5;
 }
 #loginForm input {
   /* border-style: none; */
   background: none;
   color: white;
   text-align: center;
-  z-index: 10;
+  z-index: 5;
 }
 input.id {
   width: 12em;
@@ -92,10 +92,9 @@ input::placeholder {
 }
 #weather {
   position: absolute;
-  top: 3%;
-  right: 3%;
-  transform: translate(-3%,-3%);
-  font-size: 1.5vw;
+  top: 25px;
+  right: 20px;
+  font-size: 1.5rem;
   z-index: 3;
 }
 .todoList-box {
@@ -144,10 +143,9 @@ input::placeholder {
 }
 #lettering {
   position: absolute;
-  top: 6%;
-  right: 0;
-  transform: translate(-6%, -1%);
-  font-size: 1.5vw;
+  top: 50px;
+  right: 20px;
+  font-size: 1rem;
   font-style: italic;
   z-index: 3;
 }
