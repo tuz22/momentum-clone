@@ -27,7 +27,7 @@
 - 시계 구현
 - 랜덤 레터링, 배경화면 구현
 - local Storage를 사용하여 투두리스트 구현
-- Open Weatger API를 이용한 위치기반 현재 날씨 구현
+- Open Weather API를 이용한 위치기반 현재 날씨 구현
 
 ```
 #### 5. URL
