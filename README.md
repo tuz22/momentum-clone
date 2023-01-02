@@ -30,6 +30,9 @@
 - Open Weather API를 이용한 위치기반 현재 날씨 구현
 
 ```
-#### 5. URL
+#### 5. 프로젝트 기록
+- https://seungstory.tistory.com/364
+
+#### 6. URL
 
 > [momentum-clone 페이지](https://tuz22.github.io/momentum-clone/)   
